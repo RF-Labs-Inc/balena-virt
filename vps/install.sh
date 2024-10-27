@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-COMPOSE_URL="https://raw.githubusercontent.com/RF-Labs-Inc/balena-virt/main/vps/docker-compose.yml"
+COMPOSE_URL="https://raw.githubusercontent.com/rf-labs-inc/balena-virt/main/vps/docker-compose.yml"
 
 # Setup SWAP memory
 sudo fallocate -l 500M /swapfile

@@ -2,14 +2,14 @@ version: "2"
 
 services:
   networking:
-    image: ghcr.io/RF-Labs-Inc/balena-virt-networking:latest
+    image: ghcr.io/rf-labs-inc/balena-virt-networking:latest
     cap_add:
       - net_admin
     network_mode: host
     restart: always
 
   balena-virt:
-    image: ghcr.io/RF-Labs-Inc/balena-virt:latest
+    image: ghcr.io/rf-labs-inc/balena-virt:latest
     volumes:
       - bv_pid:/app/pid
     cap_add:

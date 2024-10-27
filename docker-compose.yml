@@ -3,14 +3,14 @@ version: "2"
 
 services:
   balena-virt-networking:
-    image: ghcr.io/RF-Labs-Inc/balena-virt-networking:latest
+    image: ghcr.io/rf-labs-inc/balena-virt-networking:latest
     cap_add:
       - net_admin
     network_mode: host
     restart: always
 
   balena-virt-1:
-    image: ghcr.io/RF-Labs-Inc/balena-virt:latest
+    image: ghcr.io/rf-labs-inc/balena-virt:latest
     volumes:
       - bv_pid:/app/pid
     cap_add:
@@ -23,7 +23,7 @@ services:
     restart: always
 
   balena-virt-2:
-    image: ghcr.io/RF-Labs-Inc/balena-virt:latest
+    image: ghcr.io/rf-labs-inc/balena-virt:latest
     volumes:
       - bv_pid:/app/pid
     cap_add:
@@ -37,7 +37,7 @@ services:
     restart: always
 
   balena-virt-3:
-    image: ghcr.io/RF-Labs-Inc/balena-virt:latest
+    image: ghcr.io/rf-labs-inc/balena-virt:latest
     volumes:
       - bv_pid:/app/pid
     cap_add:
@@ -51,7 +51,7 @@ services:
     restart: always
 
   balena-virt-4:
-    image: ghcr.io/RF-Labs-Inc/balena-virt:latest
+    image: ghcr.io/rf-labs-inc/balena-virt:latest
     volumes:
       - bv_pid:/app/pid
     cap_add:

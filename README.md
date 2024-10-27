@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/RF-Labs-Inc/balena-virt/main/logo.svg" alt="Labs Logo" title="Labs Logo" width="50"/>
+<img src="https://raw.githubusercontent.com/rf-labs-inc/balena-virt/main/logo.svg" alt="Labs Logo" title="Labs Logo" width="50"/>
 
 # Balena Virt
 
@@ -7,7 +7,7 @@ Balena Virt is a suite of tools for virtualising Balena OS.
 There are a number of options for using Balena Virt:
 
 1. Running on a [Digital Ocean Droplet](#balena-virt-on-digital-ocean), providing an easy way to try [Balena Cloud](https://www.balena.io/cloud/) without the need for physical hardware, and to provide a powerful development platform.
-2. Running on other VPS services and hardware. See the [advanced setup](https://github.com/RF-Labs-Inc/balena-virt/blob/main/vps/README.md) which provides containers that can be used and steps for using Tailscale for multi-device setups.
+2. Running on other VPS services and hardware. See the [advanced setup](https://github.com/rf-labs-inc/balena-virt/blob/main/vps/README.md) which provides containers that can be used and steps for using Tailscale for multi-device setups.
 3. Running locally on a Linux desktop machine
 4. Turning a single [Intel NUC](#balena-virt-on-intel-nuc) into a small fleet of devices for testing and development
 5. Using the [Balena Virt CLI](#balena-virt-cli) for custom builds
@@ -50,7 +50,7 @@ balena push 127.0.0.1
 
 You can scale the Digital Ocean hardware to your development needs. 8 CPUs, 16GB of memory, and SSD drives make development (such as compiling binaries) far more efficient on Digital Ocean than on much of the IoT hardware used in production, while removing any need for manual configuration of development environments on your local system.
 
-You can see [some benchmarks](https://github.com/RF-Labs-Inc/balena-virt/blob/main/vps/README.md#benchmarks) where we compared the performance of Balena Virt on a Droplets against some common hardware.
+You can see [some benchmarks](https://github.com/rf-labs-inc/balena-virt/blob/main/vps/README.md#benchmarks) where we compared the performance of Balena Virt on a Droplets against some common hardware.
 
 ### Step 1: Sign up for Digital Ocean and claim the free credit
 
@@ -81,7 +81,7 @@ $96 /mo
 Connect to your Droplet as the `root` user via the terminal and run the install script:
 
 ```
-curl -fsSL https://raw.githubusercontent.com/RF-Labs-Inc/balena-virt/main/vps/install.sh | sudo sh
+curl -fsSL https://raw.githubusercontent.com/rf-labs-inc/balena-virt/main/vps/install.sh | sudo sh
 ```
 
 The default number cores, disk size and memory of the virtualised device will mirror the system that Balena Virt is running on.
@@ -113,7 +113,7 @@ ssh -L 80:10.0.3.10:80 \
 
 ### Advanced Configuration
 
-Advanced documentation is available in the `vps` folder [here](https://github.com/RF-Labs-Inc/balena-virt/blob/main/vps/README.md). It includes instructions on using other VPS services, and enabling Tailscale for multiple devices on each service.
+Advanced documentation is available in the `vps` folder [here](https://github.com/rf-labs-inc/balena-virt/blob/main/vps/README.md). It includes instructions on using other VPS services, and enabling Tailscale for multiple devices on each service.
 
 ## Balena Virt on Linux Desktop
 
@@ -126,7 +126,7 @@ docker run -it \
     --restart always \
     --cap-add=net_admin \
     --network host \
-    ghcr.io/RF-Labs-Inc/balena-virt-networking:latest
+    ghcr.io/rf-labs-inc/balena-virt-networking:latest
 ```
 
 Start the virtualised OS:
@@ -138,10 +138,10 @@ docker run -it \
     --device=/dev/kvm \
     --cap-add=net_admin \
     --network host \
-    ghcr.io/RF-Labs-Inc/balena-virt:latest
+    ghcr.io/rf-labs-inc/balena-virt:latest
 ```
 
-Start additional devices by running the `ghcr.io/RF-Labs-Inc/balena-virt:latest` command again.
+Start additional devices by running the `ghcr.io/rf-labs-inc/balena-virt:latest` command again.
 
 ## Balena Virt on Intel NUC
 
@@ -149,7 +149,7 @@ Start additional devices by running the `ghcr.io/RF-Labs-Inc/balena-virt:latest`
 
 Deploy Balena Virt with the one-click install to turn your NUC into 4 Balena OS devices:
 
-[![deploy button](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/RF-Labs-Inc/balena-virt)
+[![deploy button](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/rf-labs-inc/balena-virt)
 
 Change the default number of devices by adding or removing containers from the `./docker-compose.yml` file and deploying manually with `balena push`.
 
@@ -221,4 +221,4 @@ This disk image would then be available inside the container at `/data/rootfs.im
 
 ### Advanced Configuration
 
-Advanced documentation is available in the `cli` folder [here](https://github.com/RF-Labs-Inc/balena-virt/blob/main/cli/README.md).
+Advanced documentation is available in the `cli` folder [here](https://github.com/rf-labs-inc/balena-virt/blob/main/cli/README.md).
