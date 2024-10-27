@@ -9,7 +9,7 @@ services:
     restart: always
 
   balena-virt:
-    image: ghcr.io/rf-labs-inc/balena-virt:latest
+    image: ghcr.io/balena-labs-research/balena-virt:latest
     volumes:
       - bv_pid:/app/pid
     cap_add:

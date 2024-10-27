@@ -65,7 +65,7 @@ jobs:
   deploy-virt-to-ghcr:
     runs-on: ubuntu-20.04
     env:
-      GHCR_IMAGE_NAME: rf-labs-inc/balena-virt
+      GHCR_IMAGE_NAME: balena-labs-research/balena-virt
     permissions:
       contents: read
       packages: write
