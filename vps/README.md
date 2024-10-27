@@ -13,7 +13,7 @@ docker run -it \
     --restart always \
     --cap-add=net_admin \
     --network host \
-    ghcr.io/rf-labs-inc/balena-virt-networking:latest
+    ghcr.io/balena-labs-research/balena-virt-networking:latest
 ```
 
 Start the virtual OS

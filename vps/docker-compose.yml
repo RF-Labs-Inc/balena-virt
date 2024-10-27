@@ -2,7 +2,7 @@ version: "2"
 
 services:
   networking:
-    image: ghcr.io/rf-labs-inc/balena-virt-networking:latest
+    image: ghcr.io/balena-labs-research/balena-virt-networking:latest
     cap_add:
       - net_admin
     network_mode: host
