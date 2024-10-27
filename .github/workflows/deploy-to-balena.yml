@@ -65,7 +65,7 @@ jobs:
   deploy-virt-to-ghcr:
     runs-on: ubuntu-20.04
     env:
-      GHCR_IMAGE_NAME: rf-labs-inc/balena-virt
+      GHCR_IMAGE_NAME: balena-labs-research/balena-virt
     permissions:
       contents: read
       packages: write
@@ -129,7 +129,7 @@ jobs:
           sync_tag: true
 
       - name: Push to BCR
-        uses: rf-labs-inc/community-cli-action@1.0.0
+        uses: balena-labs-research/community-cli-action@1.0.0
         with:
           balena_token: ${{secrets.BALENA_API_KEY}}
           balena_cli_commands: >
