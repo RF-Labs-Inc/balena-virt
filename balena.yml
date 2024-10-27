@@ -9,11 +9,11 @@ assets:
   repository:
     type: blob.asset
     data:
-      url: 'https://github.com/balena-labs-research/balena-virt'
+      url: "https://github.com/RF-Labs-Inc/balena-virt"
   logo:
     type: blob.asset
     data:
-      url: 'https://raw.githubusercontent.com/balena-labs-research/balena-virt/main/logo.svg'
+      url: "https://raw.githubusercontent.com/RF-Labs-Inc/balena-virt/main/logo.svg"
 data:
   defaultDeviceType: generic-amd64
   supportedDeviceTypes:

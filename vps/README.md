@@ -13,7 +13,7 @@ docker run -it \
     --restart always \
     --cap-add=net_admin \
     --network host \
-    ghcr.io/balena-labs-research/balena-virt-networking:latest
+    ghcr.io/RF-Labs-Inc/balena-virt-networking:latest
 ```
 
 Start the virtual OS
@@ -25,7 +25,7 @@ docker run -it \
  --device=/dev/kvm \
  --cap-add=net_admin \
  --network host \
- ghcr.io/balena-labs-research/balena-virt:latest
+ ghcr.io/RF-Labs-Inc/balena-virt:latest
 
 ```
 
@@ -35,7 +35,7 @@ After starting the `networking` container in the previous step, you can start ad
 
 ```
 
-docker run -it --restart always -v bv_pid:/app/pid --device=/dev/kvm --cap-add=net_admin --network host ghcr.io/balena-labs-research/balena-virt:latest
+docker run -it --restart always -v bv_pid:/app/pid --device=/dev/kvm --cap-add=net_admin --network host ghcr.io/RF-Labs-Inc/balena-virt:latest
 
 ```
 
@@ -57,7 +57,7 @@ docker run -it \
  --device=/dev/kvm \
  --cap-add=net_admin \
  --network host \
- ghcr.io/balena-labs-research/balena-virt:latest
+ ghcr.io/RF-Labs-Inc/balena-virt:latest
 
 ```
 
@@ -74,7 +74,7 @@ docker run -it \
  --device=/dev/kvm \
  --cap-add=net_admin \
  --network host \
- ghcr.io/balena-labs-research/balena-virt:latest
+ ghcr.io/RF-Labs-Inc/balena-virt:latest
 
 ```
 
